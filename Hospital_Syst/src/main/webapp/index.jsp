@@ -106,7 +106,7 @@ out.print(conn);
 			</div>
 
 			<div class="col-md-4">
-				<img alt="" src="img/doc3.jpg" width="300px" height="400px">
+				<img alt="" src="img/doc3.jpg" width="300px" height="420px">
 			</div>
 
 		</div>
