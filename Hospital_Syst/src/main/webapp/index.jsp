@@ -1,14 +1,29 @@
+<%@page import= "com.db.DBConnect" %>
+<%@page import= "java.sql.Connection" %>
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta charset="UTF-8">
 <title>Title</title>
 <%@include file="component/allcss.jsp" %>
+<style>
+.paint-card {
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+</style>
+
 </head>
 <body>
 <%@include file="component/navbar.jsp" %>
+
+<%Connection conn =DBConnect.getConn(); 
+out.print(conn);
+%>
+
 <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -48,5 +63,104 @@
   </button>
 </div>
 
+
+<div class="container p-3">
+		<p class="text-center fs-2 ">Key Features of our Hospital</p>
+
+		<div class="row">
+			<div class="col-md-8 p-5">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card paint-card">
+							<div class="card-body">
+								<p class="fs-5">100% Safety</p>
+								<p>We ensure safety for every patient and we take care with utmost priority</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="card paint-card">
+							<div class="card-body">
+								<p class="fs-5">Clean Environment</p>
+								<p> We keep all the rooms Hygiene and</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 mt-2">
+						<div class="card paint-card">
+							<div class="card-body">
+								<p class="fs-5">Friendly Doctors</p>
+								<p>We keep smile on every Patient and making them comfortable just like home</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 mt-2">
+						<div class="card paint-card">
+							<div class="card-body">
+								<p class="fs-5">Medical Research</p>
+								<p>Topmost in medical reserch and expertise in Industry </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<img alt="" src="img/doc3.jpg" width="300px" height="400px">
+			</div>
+
+		</div>
+	</div>
+<hr>
+<div class="container p-2">
+		<p class="text-center fs-2 ">Our Team</p>
+		
+		<div class="row">
+			<div class="col-md-3">
+				<div class="card paint-card">
+					<div class="card-body text-center">
+						<img src="img/doc1.jpg" width="250px" height="300px">
+						<p class="fw-bold fs-5">Vivek Kumar</p>
+						<p class="fs-7">(CEO & Chairman)</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3">
+				<div class="card paint-card">
+					<div class="card-body text-center">
+						<img src="img/doc2.jpg" width="250px" height="300px">
+						<p class="fw-bold fs-5">Dr. Swetha Sharma</p>
+						<p class="fs-7">(Chief Doctor)</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3">
+				<div class="card paint-card">
+					<div class="card-body text-center">
+						<img src="img/doc3.jpg" width="250px" height="300px">
+						<p class="fw-bold fs-5">Dr. Naina Sharma</p>
+						<p class="fs-7">(Chief Doctor)</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3">
+				<div class="card paint-card">
+					<div class="card-body text-center">
+						<img src="img/doc4.jpg" width="250px" height="300px">
+						<p class="fw-bold fs-5">Dr. Mathuel Samuel</p>
+						<p class="fs-7">(Chief Doctor)</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</hr>
+
+<%@include file="component/footer.jsp" %>
 </body>
 </html>
