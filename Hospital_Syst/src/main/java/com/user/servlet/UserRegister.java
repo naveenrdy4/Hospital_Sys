@@ -1,4 +1,4 @@
-package com.servlet;
+package com.user.servlet;
 
 import java.io.IOException;
 
@@ -35,27 +35,25 @@ public class UserRegister extends HttpServlet {
 	boolean f= dao.Register(u)	;	
 	
 	if(f) {
-		session.setAttribute("sucMsg","Register Sucessfully");
+		session.setAttribute("sucMsg","Register Successfully");
+		resp.sendRedirect("signup.jsp");
+	}else {
 		
-		resp.sendRedirect("signup");
+		session.setAttribute("errorMsg","Something wrong on Server");
+		resp.sendRedirect("signup.jsp");
 	}
-		else {
-			session.setAttribute("errorMsg","Something wrong on Server");
-			
-			resp.sendRedirect("signup");
-		}
-		
+	
 		 
 	
 	
-	if(f)
+	/*if(f)
 	{
 		System.out.println("Data Insterted Sucessfully");
 	}else 
 	{
 		System.out.println("Something wrong on Server");
 		
-	}
+	}*/
 	
 		}catch(Exception e){
 		e.printStackTrace();

@@ -3,7 +3,7 @@
     pageEncoding="UTF-8"%>
       <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
       
-      <%@page isELIgnored="false" %>
+      <%@ page isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -42,7 +42,7 @@
 								<label class="form-label">Full Name</label> <input required
 									name="fullname" type="text" class="form-control">
 							</div>
-						<form action="#" method="post">
+						
 							<div class="mb-3">
 								<label class="form-label">Email address</label> <input required
 									name="email" type="email" class="form-control">

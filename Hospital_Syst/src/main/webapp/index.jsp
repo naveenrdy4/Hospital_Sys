@@ -34,22 +34,19 @@ out.print(conn);
     <div class="carousel-item active" data-bs-interval="10000">
       <img src="img/hos1.jpg" class="d-block w-100" alt="..." height ="500px">
       <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+       
       </div>
     </div>
     <div class="carousel-item" data-bs-interval="2000">
       <img src="img/hos2.jpg" class="d-block w-100" alt="..." height ="500px">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
+        
       </div>
     </div>
     <div class="carousel-item">
       <img src="img/hos3.jpg" class="d-block w-100" alt="..." height ="500px">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
+        
       </div>
     </div>
   </div>
@@ -82,7 +79,7 @@ out.print(conn);
 						<div class="card paint-card">
 							<div class="card-body">
 								<p class="fs-5">Clean Environment</p>
-								<p> We keep all the rooms Hygiene and</p>
+								<p> We keep all the rooms Hygiene and neat</p>
 							</div>
 						</div>
 					</div>
