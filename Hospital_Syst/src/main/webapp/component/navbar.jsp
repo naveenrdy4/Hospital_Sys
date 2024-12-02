@@ -24,37 +24,29 @@
         </li>
       </c:if>
        
-        <c:if test="${not empty userObj }">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">APPOINTMENT</a>
-          </li>
-          <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">VIEW APPOINTMENT</a>
-        
-        </li>
-        
-        
-         
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            ${userObj.fullName }</a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Change Password</a></li>
-            <li><a class="dropdown-item" href="#">Logout</a></li>
-      
-          </ul>
-        </li> 
-        </c:if>
-        
-        
-        
-        
-       
-        
-        
-        </li>
-      </ul>
-      
-    </div>
-  </div>
+       <c:if test="${not empty userObj }">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item"><a class="nav-link active"
+						aria-current="page" href="user_appointment.jsp">APPOINTMENT</a></li>
+
+					<li class="nav-item"><a class="nav-link active"
+						aria-current="page" href="view_appointment.jsp">VIEW
+							APPOINTMENT</a></li>
+
+					<div class="dropdown">
+						<button class="btn btn-success dropdown-toggle" type="button"
+							id="dropdownMenuButton1" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							<i class="fa-solid fa-circle-user"></i> ${userObj.fullName }
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+							<li><a class="dropdown-item" href="change_password.jsp">Change
+									Password</a></li>
+							<li><a class="dropdown-item" href="userLogout">Logout</a></li>
+						</ul>
+					</div>
+				</ul>
+			</c:if>
+		</div>
+	</div>
 </nav>
